@@ -20,10 +20,15 @@ void Start()
     _animator = GetComponent<Animator>();
 }
 
-    void OnMouvement(InputValue directionBase)
+    void OnAvancerReculer(InputValue directionBase)
     {
         Vector2 directionAvecVitesse = directionBase.Get<Vector2>() * _vitesseMouvement;
         directionInput = new Vector3(directionAvecVitesse.x, 0f, directionAvecVitesse.y);
+    }
+    void OnHautBas(InputValue directionBase)
+    {
+        Vector2 directionAvecVitesse = directionBase.Get<Vector2>() * _vitesseMouvement;
+        directionInput = new Vector2 (20f, directionAvecVitesse.y);
     }
 
     void FixedUpdate()

@@ -28,7 +28,7 @@ void Start()
     void OnHautBas(InputValue directionBase)
     {
         Vector2 directionAvecVitesse = directionBase.Get<Vector2>() * _vitesseMouvement;
-        directionInput = new Vector2 (20f, directionAvecVitesse.y);
+        directionInput = new Vector3 (directionAvecVitesse.x, 0f, directionAvecVitesse.y);
     }
 
     void FixedUpdate()

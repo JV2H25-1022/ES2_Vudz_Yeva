@@ -6,12 +6,24 @@
             "id": "fa368e97-b343-4c5d-8fd6-8f58ce32fefa",
             "actions": [
                 {
-                    "name": "Mouvement",
+                    "name": "HautBas",
                     "type": "Value",
                     "id": "af41a537-bbe2-45f3-9c48-0682f735e61d",
                     "expectedControlType": "Vector2",
                     "processors": "",
+                    "interactions": "Press(behavior=2)",
+<<<<<<< HEAD
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "AvantArriere",
+                    "type": "Value",
+                    "id": "2d170b12-0b88-4736-a6df-7ce1f7682adc",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
                     "interactions": "",
+=======
+>>>>>>> 99381256819cc205c44ce58741b3832fdbc7b9a0
                     "initialStateCheck": true
                 }
             ],
@@ -23,51 +35,68 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Mouvement",
+                    "action": "HautBas",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "up",
                     "id": "76f54759-2faa-434c-891a-eb13f55151ad",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier",
-                    "action": "Mouvement",
+                    "action": "HautBas",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
                     "id": "8a620b14-b5d7-4951-9726-5f633e8c5f5d",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier",
-                    "action": "Mouvement",
+                    "action": "HautBas",
+<<<<<<< HEAD
+<<<<<<< HEAD
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "left",
-                    "id": "52ff294a-7a20-464d-8fed-080359225127",
-                    "path": "<Keyboard>/a",
+                    "name": "2D Vector",
+                    "id": "6a931616-7c64-4b2b-8b92-4a1c90f22c28",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Clavier",
-                    "action": "Mouvement",
+                    "groups": "",
+                    "action": "AvantArriere",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "3fe3db6c-0981-4449-bff1-3fd974ef2dbd",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AvantArriere",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "a356e52e-b1fa-4a68-b705-686959e4458f",
-                    "path": "<Keyboard>/d",
+                    "id": "27b5c079-4559-464e-8486-6ab6a834dd9a",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Clavier",
-                    "action": "Mouvement",
+                    "groups": "",
+                    "action": "AvantArriere",
+=======
+>>>>>>> 99381256819cc205c44ce58741b3832fdbc7b9a0
+=======
+>>>>>>> 99381256819cc205c44ce58741b3832fdbc7b9a0
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

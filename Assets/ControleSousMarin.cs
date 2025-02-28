@@ -21,14 +21,16 @@ void Start()
     _mouvementSousMarin = GetComponent<ControleSousMarin>();
     }
 
+
     void OnAvantArriere(InputValue directionBase)
     {
         Vector3 directionAvecVitesse = directionBase.Get<Vector3>() * _vitesseMouvement;
         directionInput = new Vector3(0f, directionAvecVitesse.z, 0f);
     }
+
     void OnHautBas(InputValue directionBase)
     {
-        Vector2 directionAvecVitesse = directionBase.Get<Vector2>() * _vitesseMouvement;
+        Vector3 directionAvecVitesse = directionBase.Get<Vector3>() * _vitesseMouvement;
         directionInput = new Vector3 (directionAvecVitesse.x, 0f, directionAvecVitesse.y);
     }
 

@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Vitesse",
+                    "type": "Button",
+                    "id": "d74c3bf0-6cc3-4b71-a38d-d79cc27ad6c9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -39,7 +48,7 @@
                 {
                     "name": "up",
                     "id": "bfdfc593-a4f3-4068-82ae-4dd68ec4eb18",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier",
@@ -50,7 +59,7 @@
                 {
                     "name": "down",
                     "id": "c5691148-0f67-40ce-93e5-ee50dbccdbf7",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier",
@@ -72,7 +81,7 @@
                 {
                     "name": "forward",
                     "id": "f0dc6d81-10af-4e94-b3c8-c8157defefdf",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier",
@@ -83,13 +92,24 @@
                 {
                     "name": "backward",
                     "id": "632ca678-94cb-4aa6-964c-93b2f02e28d0",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier",
                     "action": "AvantArriere",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "a7b3069b-1005-437d-b055-25b09a8ebaeb",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "Hold(duration=0.1)",
+                    "processors": "",
+                    "groups": "Clavier",
+                    "action": "Vitesse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

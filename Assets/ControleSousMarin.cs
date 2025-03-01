@@ -24,6 +24,7 @@ void Start()
 
     void OnAvantArriere(InputValue directionBase)
     {
+
         Vector3 directionAvecVitesse = directionBase.Get<Vector3>() * _vitesseMouvement;
         directionInput = new Vector3(0f, directionAvecVitesse.z, 0f);
     }
@@ -42,6 +43,7 @@ void Start()
       
 
         // calculer un modifiant pour la vitesse d'animation
+
         
         _animator.SetFloat("Vitesse", mouvement.magnitude * _modifierAnimTranslation);
        
